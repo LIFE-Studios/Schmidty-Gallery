@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development --open",
+    "start": "webpack-dev-server --mode development --open ",
+    "dashboard": "webpack-dashboard -t [my-app] -- webpack-dev-server --mode development --open ",
     "build": "webpack --mode production"
   },
   "keywords": [
@@ -22,14 +23,19 @@
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-loader": "^2.0.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
     "postcss-loader": "^2.1.5",
     "sass-loader": "^7.0.1",
+    "speed-measure-webpack-plugin": "^1.2.2",
     "style-loader": "^0.21.0",
     "webpack": "^4.10.1",
     "webpack-cli": "^2.1.4",
+    "webpack-dashboard": "^2.0.0",
     "webpack-dev-server": "^3.1.4",
     "webpack-md5-hash": "0.0.6"
   }

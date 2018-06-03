@@ -4,8 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackMd5Hash = require('webpack-md5-hash')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+const DashboardPlugin = require('webpack-dashboard/plugin')
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
+const SpeedMeasurePlugin = require("speed-measure-webpack-plugin")
+const smp = new SpeedMeasurePlugin()
 
-module.exports = {
+module.exports = smp.wrap({
   entry: { main: './src/index.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -16,9 +20,10 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+        use: [
+          "babel-loader",
+          "eslint-loader"
+        ]
       },
       {
         test: /\.scss$/,
@@ -32,6 +37,9 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    quiet: true
+  },
   plugins: [
     new CleanWebpackPlugin('dist', {} ),
     new MiniCssExtractPlugin({
@@ -43,6 +51,8 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html'
     }),
-    new WebpackMd5Hash()
+    new WebpackMd5Hash(),
+    new FriendlyErrorsWebpackPlugin(),
+    new DashboardPlugin()
   ]
-}
+})
