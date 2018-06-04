@@ -14,24 +14,28 @@ A balance between absolute minimal and production-ready minimal
 ## Quick Start
 
 ```bash
+
 npm install
 
+```
+
+```bash
+
 npm start
+
 ```
 
 ---
 
 ### Available Scripts
 
-In the project directory, you can run:
-
-### `npm start`
+## `npm start`
 
 Runs a webpack dev server in development mode. Page reloads on edit.
 
 Open [http://localhost:8080](http://localhost:8080)
 
 
-### `npm run build`
+## `npm run build`
 
-Builds the app for production to the `dist` folder.
+Builds a production app in the `dist` folder.
