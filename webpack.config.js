@@ -27,12 +27,15 @@ module.exports = smp.wrap({
         ]
       },
       {
-        test: /\.scss$/,
+        test: /\.s?css$/,
         use: [
           'style-loader',
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'postcss-loader',
+          {
+            loader: 'postcss-loader',
+            options: { sourceMap: true }
+          },
           'sass-loader'
         ]
       }
