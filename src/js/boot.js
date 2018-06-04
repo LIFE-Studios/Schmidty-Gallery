@@ -1,9 +1,13 @@
 import "../style/main.css";
+import blueimp from 'blueimp-gallery';
 
 export default class Boot {
   constructor () {
-    console.log('que pasa');
+    this.blueimp = blueimp || {};
+  }
+  init () {
+    console.log('roll it');
   }
 }
 
-window.onload = () => new Boot;
+window.onload = () => (new Boot).init();

@@ -49,6 +49,7 @@
     }
   },
   "dependencies": {
+    "blueimp-gallery": "^2.33.0",
     "minireset.css": "0.0.3"
   }
 }
