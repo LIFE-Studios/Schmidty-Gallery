@@ -34,7 +34,7 @@
     "friendly-errors-webpack-plugin": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "git://github.com/sass/node-sass.git#v5",
     "postcss-loader": "^2.1.5",
     "sass-loader": "^7.0.1",
     "speed-measure-webpack-plugin": "^1.2.2",

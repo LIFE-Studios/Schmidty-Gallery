@@ -15,7 +15,7 @@ A balance between absolute minimal and production-ready minimal
 
 ```bash
 
-npm install
+$ npm install
 
 ```
 
