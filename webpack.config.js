@@ -7,6 +7,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const DashboardPlugin = require('webpack-dashboard/plugin')
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin")
+const DuplicatePackage = require("duplicate-package-checker-webpack-plugin")
 const smp = new SpeedMeasurePlugin()
 
 module.exports = smp.wrap({
@@ -53,6 +54,7 @@ module.exports = smp.wrap({
     }),
     new WebpackMd5Hash(),
     new FriendlyErrorsWebpackPlugin(),
-    new DashboardPlugin()
+    new DashboardPlugin(),
+    new DuplicatePackage()
   ]
 })
