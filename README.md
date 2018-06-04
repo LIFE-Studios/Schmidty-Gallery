@@ -1,3 +1,5 @@
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 ## Schmidty-Boilerplate
 
 Minimal boilerplate for rapid development
@@ -19,6 +21,3 @@ Page reloads on edit.
 ### `npm run build`
 
 Builds the app for production to the `dist` folder.
-
-
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
