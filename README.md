@@ -2,6 +2,8 @@
 
 Minimal boilerplate for rapid development
 
+# A balance between absolute minimal and production-ready minimal
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -17,4 +19,3 @@ Page reloads on edit.
 ### `npm run build`
 
 Builds the app for production to the `dist` folder.
-
