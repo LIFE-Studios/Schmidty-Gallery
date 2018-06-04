@@ -11,7 +11,7 @@ const DuplicatePackage = require("duplicate-package-checker-webpack-plugin")
 const smp = new SpeedMeasurePlugin()
 
 module.exports = smp.wrap({
-  entry: { main: './src/index.js' },
+  entry: { main: './src/js/boot.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].js'
