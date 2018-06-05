@@ -1,5 +1,10 @@
 @import "~minireset.css/minireset.css";
+@import "~blueimp-gallery/css/blueimp-gallery.css";
+@import "~blueimp-gallery/css/blueimp-gallery-indicator.css";
 body {
   background: #000;
   color: #fff;
+}
+#links img {
+  width: 200px;
 }

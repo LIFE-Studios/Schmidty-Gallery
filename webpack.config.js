@@ -10,9 +10,10 @@ const SpeedMeasurePlugin = require("speed-measure-webpack-plugin")
 const DuplicatePackage = require("duplicate-package-checker-webpack-plugin")
 const smp = new SpeedMeasurePlugin()
 
+/**/
 module.exports = smp.wrap({
   entry: [
-    './src/js/boot.js'
+    './src/js/app.js'
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
