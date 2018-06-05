@@ -1,11 +1,12 @@
-# Schmidty-Boilerplate
+# Schmidty-Gallery
 
 ![npm](https://img.shields.io/npm/v/npm.svg) ![node (scoped with tag)](https://img.shields.io/node/v/@stdlib/stdlib/latest.svg) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 
-Minimal config for rapid development
+Photo Gallery App based on the module 'gallery' from blueimp
 
-A balance between absolute minimal and production-ready minimal
+Forked from Schmidty-Boilerplate [https://github.com/icebox/Schmidty-Boilerplate]
+
 
 ---
 
